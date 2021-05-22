@@ -1,16 +1,16 @@
-package com.qa.library.contents;
+package com.qa.library;
 
-public abstract class Items {
+public abstract class Items{
 
 	private static int count = 0;
 	private int id;
 	private String name;
 	private boolean checkedOut;
-	public Items(int id, String name, boolean checkedOut) {
-		super();
-		this.id = ++count;
+	
+	public Items(String name, boolean checkedOut) {
 		this.name = name;
 		this.checkedOut = checkedOut;
+		this.id = ++count;
 	}
 	
 	public String getName() {
@@ -24,9 +24,6 @@ public abstract class Items {
 	}
 	public void setCheckedOut(boolean checkedOut) {
 		this.checkedOut = checkedOut;
-	}
-	public int getId() {
-		return id;
 	}
 
 	@Override
