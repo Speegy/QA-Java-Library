@@ -10,7 +10,7 @@ public class Runner {
 		boolean bool = true;
 		while(bool) {
 			
-			Camera c = new Camera("Camera", false, "SD", 100);
+			Camera c = new Camera("SD", 100);
 			Library l = new Library();
 			l.add(c);
 			System.out.println(l.getItems());
@@ -21,7 +21,7 @@ public class Runner {
 //			if(escape.equals("e")) 
 				bool = false;
 		}
-		System.out.println("Application has ended");
+//		System.out.println("Application has ended");
 	}
 
 }
