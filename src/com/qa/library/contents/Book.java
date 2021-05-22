@@ -1,12 +1,14 @@
 package com.qa.library.contents;
 
+import com.qa.library.Items;
+
 public class Book extends Items {
 
 	private String genre;
 	private String author;
 	
-	public Book(int id, String name, boolean checkedOut,String genre,String author) {
-		super(id, name, checkedOut);
+	public Book(String name, boolean checkedOut,String genre,String author) {
+		super(name, checkedOut);
 		this.genre = genre;
 		this.author = author;
 	}
@@ -29,9 +31,10 @@ public class Book extends Items {
 
 	@Override
 	public String toString() {
-		return "Book [genre=" + genre + ", author=" + author + ", getName()=" + getName() + ", isCheckedOut()="
-				+ isCheckedOut() + ", getId()=" + getId() + "]";
+		return "Book [genre=" + genre + ", author=" + author + ", toString()=" + super.toString() + "]";
 	}
+
+
 
 	
 }
