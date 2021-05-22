@@ -1,7 +1,5 @@
 package com.qa.library.contents;
 
-import com.qa.library.Items;
-
 public class Maps extends Items{
 
 	private String location;
@@ -30,9 +28,16 @@ public class Maps extends Items{
 	}
 
 	@Override
+	public String checkoutItem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
 	public String toString() {
 		return "Maps [location=" + location + ", type=" + type + ", getName()=" + getName() + ", isCheckedOut()="
 				+ isCheckedOut() + "]";
 	}
-	
+
+
 }

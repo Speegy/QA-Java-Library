@@ -1,11 +1,17 @@
-package com.qa.library;
+package com.qa.library.contents;
 
-public abstract class Items{
+import com.qa.library.LibraryMethods;
+
+public abstract class Items implements LibraryMethods{
 
 	private static int count = 0;
 	private int id;
 	private String name;
 	private boolean checkedOut;
+	
+	public Items() {
+		this("Unknown", false);
+	}
 	
 	public Items(String name, boolean checkedOut) {
 		this.name = name;
