@@ -2,7 +2,7 @@ package com.qa.library.contents;
 
 import com.qa.library.LibraryMethods;
 
-public abstract class Items implements LibraryMethods{
+public abstract class Items{
 
 	private static int count = 0;
 	private int id;

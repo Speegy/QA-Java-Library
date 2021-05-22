@@ -32,12 +32,6 @@ public class Camera extends Items{
 	public void setBattery(int battery) {
 		this.battery = battery;
 	}
-
-	@Override
-	public String checkoutItem() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	@Override
 	public String toString() {
