@@ -1,12 +1,16 @@
 package com.qa.library.contents;
 
-import com.qa.library.Items;
-
 public class Camera extends Items{
 
 	private String imageStorage;
 	private int battery;
 
+	public Camera(String imageStorage, int battery) {
+		super();
+		this.imageStorage=imageStorage;
+		this.battery=battery;
+	}
+	
 	public Camera(String name, boolean checkedOut, String imageStorage, int battery) {
 		super(name, checkedOut);
 		this.imageStorage=imageStorage;
@@ -29,6 +33,12 @@ public class Camera extends Items{
 		this.battery = battery;
 	}
 
+	@Override
+	public String checkoutItem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 	@Override
 	public String toString() {
 		return "Camera [imageStorage=" + imageStorage + ", battery=" + battery + ", toString()=" + super.toString()

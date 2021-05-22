@@ -1,7 +1,5 @@
 package com.qa.library.contents;
 
-import com.qa.library.Items;
-
 public class Book extends Items {
 
 	private String genre;
@@ -30,11 +28,14 @@ public class Book extends Items {
 	}
 
 	@Override
+	public String checkoutItem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	@Override
 	public String toString() {
 		return "Book [genre=" + genre + ", author=" + author + ", toString()=" + super.toString() + "]";
 	}
-
-
-
 	
 }
