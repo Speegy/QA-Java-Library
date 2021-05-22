@@ -5,6 +5,12 @@ public class Book extends Items {
 	private String genre;
 	private String author;
 	
+	public Book(String genre,String author) {
+		super();
+		this.genre = genre;
+		this.author = author;
+	}
+	
 	public Book(String name, boolean checkedOut,String genre,String author) {
 		super(name, checkedOut);
 		this.genre = genre;
@@ -25,12 +31,6 @@ public class Book extends Items {
 
 	public void setAuthor(String author) {
 		this.author = author;
-	}
-
-	@Override
-	public String checkoutItem() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 	
 	@Override

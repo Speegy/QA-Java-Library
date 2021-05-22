@@ -28,12 +28,6 @@ public class Maps extends Items{
 	}
 
 	@Override
-	public String checkoutItem() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
 	public String toString() {
 		return "Maps [location=" + location + ", type=" + type + ", getName()=" + getName() + ", isCheckedOut()="
 				+ isCheckedOut() + "]";
