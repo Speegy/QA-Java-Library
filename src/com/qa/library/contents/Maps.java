@@ -1,12 +1,14 @@
 package com.qa.library.contents;
 
+import com.qa.library.Items;
+
 public class Maps extends Items{
 
 	private String location;
 	private String type; // Ex: Road map, World Map, State Map, City Map, Treasure Map
 
-	public Maps(int id, String name, boolean checkedOut, String location, String type) {
-		super(id, name, checkedOut);
+	public Maps(String name, boolean checkedOut, String location, String type) {
+		super(name, checkedOut);
 		this.location = location;
 		this.type = type;
 	}
@@ -30,7 +32,7 @@ public class Maps extends Items{
 	@Override
 	public String toString() {
 		return "Maps [location=" + location + ", type=" + type + ", getName()=" + getName() + ", isCheckedOut()="
-				+ isCheckedOut() + ", getId()=" + getId() + "]";
+				+ isCheckedOut() + "]";
 	}
 	
 }
